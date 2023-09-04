@@ -1,0 +1,120 @@
+Solver command line: ['C:\\Program Files\\IBM\\ILOG\\CPLEX_Studio221\\cplex\\bin\\x64_win64\\cplex.exe']
+
+
+Welcome to IBM(R) ILOG(R) CPLEX(R) Interactive Optimizer 22.1.0.0
+  with Simplex, Mixed Integer & Barrier Optimizers
+5725-A06 5725-A29 5724-Y48 5724-Y49 5724-Y54 5724-Y55 5655-Y21
+Copyright IBM Corp. 1988, 2022.  All Rights Reserved.
+
+Type 'help' for a list of available commands.
+Type 'help' followed by a command name for more
+information on commands.
+
+CPLEX> Logfile 'cplex.log' closed.
+Logfile 'data\50_bus\3.5_trips_per_bus\5_6_3\step1.log' open.
+CPLEX> New value for mixed integer solutions limit: 1
+CPLEX> New value for time limit in seconds: 501
+CPLEX> New value for default parallel thread count: 1
+CPLEX> Problem 'C:\Users\Mathis\AppData\Local\Temp\tmpwsu6ivvh.pyomo.lp' read.
+Read time = 0.48 sec. (35.28 ticks)
+CPLEX> Problem name         : C:\Users\Mathis\AppData\Local\Temp\tmpwsu6ivvh.pyomo.lp
+Objective sense      : Minimize
+Variables            :  170556  [Nneg: 73544,  Binary: 97012]
+Objective nonzeros   :   96855
+Linear constraints   :  276020  [Less: 265894,  Greater: 2775,  Equal: 7351]
+  Nonzeros           : 1091075
+  RHS nonzeros       :  204170
+
+Variables            : Min LB: 0.000000         Max UB: 1.000000       
+Objective nonzeros   : Min   : 1.000000         Max   : 378225.0       
+Linear constraints   :
+  Nonzeros           : Min   : 0.2192982        Max   : 7551.000       
+  RHS nonzeros       : Min   : 1.000000         Max   : 7371.000       
+CPLEX> Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
+CPXPARAM_Threads                                 1
+CPXPARAM_MIP_Limits_Solutions                    1
+CPXPARAM_TimeLimit                               501
+Tried aggregator 4 times.
+MIP Presolve eliminated 12897 rows and 2792 columns.
+MIP Presolve modified 72 coefficients.
+Aggregator did 919 substitutions.
+Reduced MIP has 262204 rows, 166845 columns, and 1054249 nonzeros.
+Reduced MIP has 95474 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 1.94 sec. (1425.34 ticks)
+Probing fixed 210 vars, tightened 1010 bounds.
+Probing time = 4.09 sec. (2320.96 ticks)
+Tried aggregator 2 times.
+Detecting symmetries...
+MIP Presolve eliminated 3877 rows and 3997 columns.
+MIP Presolve modified 159051 coefficients.
+Aggregator did 1 substitutions.
+Reduced MIP has 258326 rows, 162847 columns, and 1040596 nonzeros.
+Reduced MIP has 95263 binaries, 915 generals, 0 SOSs, and 0 indicators.
+Presolve time = 1.64 sec. (1493.82 ticks)
+Probing fixed 118 vars, tightened 426 bounds.
+Probing time = 2.30 sec. (598.61 ticks)
+Clique table members: 483815.
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: none, using 1 thread.
+Root relaxation solution time = 185.47 sec. (176999.66 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+      0     0   3.21123e+07  1103                 3.21123e+07   194797         
+      0     0   3.21123e+07   898                  Cuts: 1227   201894         
+      0     0   3.21123e+07   810                   Cuts: 571   203519         
+      0     0   3.21123e+07   832                   Cuts: 235   204329         
+      0     0   3.21123e+07   845                   Cuts: 181   205003         
+Heuristic still looking.
+      0     2   3.21123e+07   845                 3.21123e+07   205003         
+Elapsed time = 337.80 sec. (340243.02 ticks, tree = 0.01 MB, solutions = 0)
+      3     5   3.21123e+07   839                 3.21123e+07   205149         
+      4     6   3.21123e+07   865                 3.21123e+07   206260         
+      5     7   3.21123e+07   890                 3.21123e+07   212275         
+      6     8   3.21123e+07   855                 3.21123e+07   212386         
+     10    12   3.21123e+07   840                 3.21123e+07   212469         
+     14    16   3.21123e+07   832                 3.21123e+07   212492         
+     15    17   3.21123e+07   841                 3.21123e+07   212987         
+     18    20   3.21123e+07   824                 3.21123e+07   213021         
+     20    22   3.21123e+07   816                 3.21123e+07   213036         
+     26    28   3.21123e+07   815                 3.21123e+07   213667         
+Elapsed time = 413.20 sec. (412208.65 ticks, tree = 3.82 MB, solutions = 0)
+     27    29   3.21123e+07   790                 3.21123e+07   214484         
+     38    40   3.21123e+07   764                 3.21123e+07   214775         
+     41    43   3.21123e+07   752                 3.21123e+07   215313         
+     50    52   3.21123e+07   702                 3.21123e+07   215518         
+     53    55   3.21123e+07   708                 3.21123e+07   216251         
+     62    64   3.21123e+07   669                 3.21123e+07   216510         
+     64    66   3.21123e+07   807                 3.21123e+07   242908         
+     70    72   3.21123e+07   645                 3.21123e+07   243253         
+     78    80   3.21123e+07   602                 3.21123e+07   243487         
+     80    82   3.21123e+07   594                 3.21123e+07   243489         
+Elapsed time = 498.77 sec. (490087.13 ticks, tree = 8.25 MB, solutions = 0)
+     89    91   3.21123e+07   562                 3.21123e+07   243655         
+
+Clique cuts applied:  136
+Implied bound cuts applied:  81
+Flow cuts applied:  255
+Mixed integer rounding cuts applied:  465
+Zero-half cuts applied:  1
+Lift and project cuts applied:  20
+Gomory fractional cuts applied:  68
+
+Root node processing (before b&c):
+  Real time             =  334.20 sec. (336491.96 ticks)
+Sequential b&c:
+  Real time             =  166.86 sec. (155609.72 ticks)
+                          ------------
+Total (root+branch&cut) =  501.06 sec. (492101.67 ticks)
+
+
+MIP - Time limit exceeded, no integer solution.
+Current MIP best bound =  3.2112303000e+07 (gap is infinite)
+Solution time =  501.06 sec.  Iterations = 244121  Nodes = 90 (91)
+Deterministic time = 492102.16 ticks  (982.12 ticks/sec)
+
+CPLEX> CPLEX Error  1217: No solution exists.
+No file written.
+CPLEX> 

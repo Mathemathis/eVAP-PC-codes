@@ -1,0 +1,93 @@
+ ! --------------------------------------------------- CP Optimizer 22.1.1.0 --
+ ! Satisfiability problem - 21975 variables, 167465 constraints
+ ! Presolve      : 13500 extractables eliminated
+ ! TimeLimit            = 3600
+ ! Workers              = 1
+ ! Initial process time : 1.95s (1.95s extraction + 0.00s propagation)
+ !  . Log search space  : 226552.8 (before), 226552.8 (after)
+ !  . Memory usage      : 147.3 MB (before), 147.3 MB (after)
+ ! Using sequential search.
+ ! ----------------------------------------------------------------------------
+ !               Branches  Non-fixed            Branch decision
+                     1025      20574        F          presenceOf(copy_trips:27_0)
+                     2000      14620                   presenceOf(copy_lane_parking:3_37)
+                     3000      14542                   presenceOf(copy_trips:4_93)
+                     4000      13302        F         !presenceOf(copy_bus_parking:12_220)
+                     5000       8039        F          presenceOf(copy_trips:28_27)
+                     6000       9424                   presenceOf(copy_bus_parking:9_219)
+                     7000       9424                   presenceOf(copy_lane_parking:2_141)
+                     8000      16057                  !presenceOf(copy_trips:0_219)
+                     9000      16054                  !presenceOf(copy_bus_parking:17_220)
+                    10000      14018                  !presenceOf(copy_trips:6_12)
+                    11000      13973                   presenceOf(copy_lane_parking:4_88)
+                    12000      13304                   presenceOf(copy_lane_parking:2_42)
+                    13000      13626        F          presenceOf(copy_bus_parking:26_46)
+                    14000      13082                  !presenceOf(copy_bus_parking:2_62)
+                    15000      12964                   presenceOf(copy_lane_parking:3_104)
+                    16000      14278                  !presenceOf(copy_trips:2_64)
+                    17000       9020            on charge:13_58
+                    18000      13008                  !presenceOf(copy_trips:6_3)
+                    19000      13039                  !presenceOf(copy_bus_parking:22_218)
+                    20000      14118                  !presenceOf(copy_bus_parking:18_218)
+ ! Time = 16.09s, Average fail depth = 252, Memory usage = 450.8 MB
+ !               Branches  Non-fixed            Branch decision
+                    21000      14115                  !presenceOf(copy_bus_parking:12_220)
+                    22000      14109                   presenceOf(copy_bus_parking:16_219)
+                    23000      16030           1088  = startOf(charge:19_44)
+                    24000      15891                  !presenceOf(copy_bus_parking:13_68)
+                    25000      15665        F          presenceOf(copy_trips:6_69)
+                    26000      15665                  !presenceOf(copy_trips:16_69)
+                    27000      15665        F          presenceOf(copy_bus_parking:5_70)
+                    28000      13264        F         !presenceOf(copy_bus_parking:7_220)
+                    29000      14115                  !presenceOf(copy_trips:21_220)
+                    30000      11229        F          presenceOf(copy_trips:11_114)
+                    31000       8140                  !presenceOf(copy_bus_parking:4_59)
+                    32000      13066        F          presenceOf(copy_bus_parking:0_224)
+                    33000      14675                  !presenceOf(copy_trips:0_70)
+                    34000       4561                  !presenceOf(copy_trips:19_191)
+                    35000        707                  !presenceOf(copy_trips:16_161)
+                    36000        707                  !presenceOf(copy_trips:2_161)
+                    37000        713        F         !presenceOf(copy_trips:15_73)
+                    38000      14186                   presenceOf(copy_trips:3_146)
+                    39000       9421                   presenceOf(copy_lane_parking:0_119)
+                    40000       9448        F          presenceOf(copy_bus_parking:26_71)
+ ! Time = 26.42s, Average fail depth = 287, Memory usage = 468.3 MB
+ !               Branches  Non-fixed            Branch decision
+                    41000      13632                   presenceOf(copy_lane_parking:4_172)
+                    42000      16033                  !presenceOf(copy_trips:5_24)
+                    43000       7736                   presenceOf(copy_lane_parking:1_124)
+                    44000      13052        F          presenceOf(copy_trips:17_67)
+                    45000      14610                  !presenceOf(copy_trips:26_17)
+                    46000       9442                  !presenceOf(copy_trips:19_224)
+                    47000       9442                  !presenceOf(copy_trips:1_224)
+                    48000       9442                  !presenceOf(copy_trips:23_224)
+                    49000       9445                   presenceOf(copy_trips:21_129)
+                    50000       9448        F         !presenceOf(copy_bus_parking:10_224)
+                    51000       9445        F         !presenceOf(copy_bus_parking:10_224)
+                    52000       9445        F          presenceOf(copy_trips:28_219)
+                    53000       9448        F         !presenceOf(copy_bus_parking:14_224)
+                    54000       9448                   presenceOf(copy_trips:3_219)
+                    55000       9445        F          presenceOf(copy_trips:23_219)
+                    56000       9445                  !presenceOf(copy_bus_parking:8_224)
+                    57000       9445        F         !presenceOf(copy_bus_parking:10_224)
+                    58000       9445        F         !presenceOf(copy_bus_parking:14_224)
+                    59000       9445                  !presenceOf(copy_bus_parking:17_224)
+                    60000       9445                  !presenceOf(copy_bus_parking:17_224)
+ ! Time = 33.55s, Average fail depth = 303, Memory usage = 468.3 MB
+ !               Branches  Non-fixed            Branch decision
+                    61000       9445                  !presenceOf(copy_bus_parking:17_224)
+                    62000       9445        F          presenceOf(copy_trips:21_29)
+                    63000      15276                  !presenceOf(copy_trips:11_9)
+                    64000       8951        F          presenceOf(copy_trips:20_44)
+                    65000      10504        F          presenceOf(copy_trips:5_121)
+                    66000       2118        F          presenceOf(copy_trips:21_162)
+ *                  66458  36.42s                    -
+ ! ----------------------------------------------------------------------------
+ ! Search completed, 1 solution found.
+ ! ----------------------------------------------------------------------------
+ ! Number of branches     : 66458
+ ! Number of fails        : 24816
+ ! Total memory usage     : 497.5 MB (484.4 MB CP Optimizer + 13.1 MB Concert)
+ ! Time spent in solve    : 36.42s (34.48s engine + 1.95s extraction)
+ ! Search speed (br. / s) : 1927.4
+ ! ----------------------------------------------------------------------------

@@ -1,0 +1,55 @@
+Solver command line: ['C:\\Program Files\\IBM\\ILOG\\CPLEX_Studio221\\cplex\\bin\\x64_win64\\cplex.exe']
+
+
+Welcome to IBM(R) ILOG(R) CPLEX(R) Interactive Optimizer 22.1.0.0
+  with Simplex, Mixed Integer & Barrier Optimizers
+5725-A06 5725-A29 5724-Y48 5724-Y49 5724-Y54 5724-Y55 5655-Y21
+Copyright IBM Corp. 1988, 2022.  All Rights Reserved.
+
+Type 'help' for a list of available commands.
+Type 'help' followed by a command name for more
+information on commands.
+
+CPLEX> Logfile 'cplex.log' closed.
+Logfile 'data\30_bus\4_trips_per_bus\3_0.6_1\step1.log' open.
+CPLEX> New value for mixed integer solutions limit: 1
+CPLEX> New value for time limit in seconds: 3600
+CPLEX> New value for default parallel thread count: 1
+CPLEX> Problem 'C:\Users\Mathis\AppData\Local\Temp\tmpb_3zm_v5.pyomo.lp' read.
+Read time = 0.13 sec. (10.53 ticks)
+CPLEX> Problem name         : C:\Users\Mathis\AppData\Local\Temp\tmpb_3zm_v5.pyomo.lp
+Objective sense      : Minimize
+Variables            :   46539  [Nneg: 29303,  Binary: 17236]
+Objective nonzeros   :   17186
+Linear constraints   :   79373  [Less: 75112,  Greater: 780,  Equal: 3481]
+  Nonzeros           :  376729
+  RHS nonzeros       :   50041
+
+Variables            : Min LB: 0.000000         Max UB: 1.000000       
+Objective nonzeros   : Min   : 1.000000         Max   : 265225.0       
+Linear constraints   :
+  Nonzeros           : Min   : 0.2192982        Max   : 4671.000       
+  RHS nonzeros       : Min   : 1.000000         Max   : 4491.000       
+CPLEX> Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
+CPXPARAM_Threads                                 1
+CPXPARAM_MIP_Limits_Solutions                    1
+CPXPARAM_TimeLimit                               3600
+Row 'c_e_x156923_' infeasible, all entries at implied bounds.
+Presolve time = 0.11 sec. (89.99 ticks)
+
+Root node processing (before b&c):
+  Real time             =    0.13 sec. (106.01 ticks)
+Sequential b&c:
+  Real time             =    0.00 sec. (0.00 ticks)
+                          ------------
+Total (root+branch&cut) =    0.13 sec. (106.01 ticks)
+
+
+MIP - Integer infeasible.
+Current MIP best bound =  0.0000000000e+00 (gap is infinite)
+Solution time =    0.13 sec.  Iterations = 0  Nodes = 0 (1)
+Deterministic time = 106.14 ticks  (849.12 ticks/sec)
+
+CPLEX> CPLEX Error  1217: No solution exists.
+No file written.
+CPLEX> 

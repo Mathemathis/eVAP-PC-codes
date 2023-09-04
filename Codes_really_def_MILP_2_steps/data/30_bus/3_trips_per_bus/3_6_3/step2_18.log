@@ -1,0 +1,91 @@
+Solver command line: ['C:\\Program Files\\IBM\\ILOG\\CPLEX_Studio221\\cplex\\bin\\x64_win64\\cplex.exe']
+
+
+Welcome to IBM(R) ILOG(R) CPLEX(R) Interactive Optimizer 22.1.0.0
+  with Simplex, Mixed Integer & Barrier Optimizers
+5725-A06 5725-A29 5724-Y48 5724-Y49 5724-Y54 5724-Y55 5655-Y21
+Copyright IBM Corp. 1988, 2022.  All Rights Reserved.
+
+Type 'help' for a list of available commands.
+Type 'help' followed by a command name for more
+information on commands.
+
+CPLEX> Logfile 'cplex.log' closed.
+Logfile 'data\30_bus\3_trips_per_bus\3_6_3\step2_18.log' open.
+CPLEX> New value for mixed integer solutions limit: 1
+CPLEX> New value for time limit in seconds: 500
+CPLEX> New value for default parallel thread count: 1
+CPLEX> Problem 'C:\Users\Mathis\AppData\Local\Temp\tmp87j1s0oi.pyomo.lp' read.
+Read time = 0.08 sec. (8.55 ticks)
+CPLEX> Problem name         : C:\Users\Mathis\AppData\Local\Temp\tmp87j1s0oi.pyomo.lp
+Objective sense      : Minimize
+Variables            :   59398  [Nneg: 13172,  Binary: 46226]
+Objective nonzeros   :       1
+Linear constraints   :   60269  [Less: 58468,  Greater: 300,  Equal: 1501]
+  Nonzeros           :  314294
+  RHS nonzeros       :   47968
+
+Variables            : Min LB: 0.000000         Max UB: 1.000000       
+Objective nonzeros   : Min   : 1.149978e+07     Max   : 1.149978e+07   
+Linear constraints   :
+  Nonzeros           : Min   : 0.2192982        Max   : 10000.00       
+  RHS nonzeros       : Min   : 1.000000         Max   : 10000.00       
+CPLEX> Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
+CPXPARAM_Threads                                 1
+CPXPARAM_MIP_Limits_Solutions                    1
+CPXPARAM_TimeLimit                               500
+Tried aggregator 2 times.
+MIP Presolve eliminated 49748 rows and 30532 columns.
+MIP Presolve modified 43880 coefficients.
+Aggregator did 460 substitutions.
+Reduced MIP has 10061 rows, 28406 columns, and 90261 nonzeros.
+Reduced MIP has 27675 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.16 sec. (148.32 ticks)
+Probing time = 0.02 sec. (9.33 ticks)
+Tried aggregator 2 times.
+Detecting symmetries...
+Aggregator did 3 substitutions.
+Reduced MIP has 10058 rows, 28403 columns, and 90255 nonzeros.
+Reduced MIP has 27675 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.09 sec. (77.77 ticks)
+Probing time = 0.02 sec. (9.28 ticks)
+Clique table members: 2662.
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: none, using 1 thread.
+Root relaxation solution time = 0.11 sec. (149.32 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+      0     0   1.14998e+07   709                 1.14998e+07     1940         
+      0     0   1.14998e+07   176                    Cuts: 12     2493         
+      0     0   1.14998e+07   278                   Cuts: 518     3446         
+      0     0   1.14998e+07    69                    Cuts: 78     3670         
+      0     0   1.14998e+07   197                   Cuts: 130     4720         
+*     0+    0                       1.14998e+07   1.14998e+07             0.00%
+      0     0        cutoff         1.14998e+07   1.14998e+07     4720    0.00%
+Elapsed time = 6.03 sec. (10107.83 ticks, tree = 0.01 MB, solutions = 1)
+
+Clique cuts applied:  1
+Implied bound cuts applied:  171
+Flow cuts applied:  3
+Mixed integer rounding cuts applied:  52
+Multi commodity flow cuts applied:  7
+Gomory fractional cuts applied:  7
+
+Root node processing (before b&c):
+  Real time             =    6.05 sec. (10109.99 ticks)
+Sequential b&c:
+  Real time             =    0.00 sec. (0.00 ticks)
+                          ------------
+Total (root+branch&cut) =    6.05 sec. (10109.99 ticks)
+
+Solution pool: 1 solution saved.
+
+MIP - Integer optimal solution:  Objective =  1.1499783000e+07
+Solution time =    6.05 sec.  Iterations = 4720  Nodes = 0
+Deterministic time = 10110.16 ticks  (1672.21 ticks/sec)
+
+CPLEX> Incumbent solution written to file 'C:\Users\Mathis\AppData\Local\Temp\tmpx4oz_akw.cplex.sol'.
+CPLEX> 

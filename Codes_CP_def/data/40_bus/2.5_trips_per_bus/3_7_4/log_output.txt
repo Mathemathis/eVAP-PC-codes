@@ -1,0 +1,56 @@
+ ! --------------------------------------------------- CP Optimizer 22.1.1.0 --
+ ! Satisfiability problem - 38600 variables, 342474 constraints
+ ! Presolve      : 24000 extractables eliminated
+ ! TimeLimit            = 3600
+ ! Workers              = 1
+ ! Initial process time : 3.38s (3.38s extraction + 0.01s propagation)
+ !  . Log search space  : 401578.2 (before), 401578.2 (after)
+ !  . Memory usage      : 271.7 MB (before), 271.7 MB (after)
+ ! Using sequential search.
+ ! ----------------------------------------------------------------------------
+ !               Branches  Non-fixed            Branch decision
+                     1123      37352        F          presenceOf(copy_trips:39_35)
+                     2071      37990        F          presenceOf(copy_trips:33_0)
+                     3000      17411                   presenceOf(copy_lane_parking:4_54)
+                     4000      32806            245 != endOf(start_parking:37)
+                     5000      27811                   presenceOf(copy_lane_parking:0_124)
+                     6000      13629                   presenceOf(copy_trips:10_118)
+                     7000      13635                   presenceOf(copy_lane_parking:1_129)
+                     8000      27947                   presenceOf(copy_lane_parking:3_27)
+                     9000      24839        F          presenceOf(copy_bus_parking:24_296)
+                    10000      24860                   presenceOf(copy_lane_parking:3_86)
+                    11000      30580        F         !presenceOf(start_parking:9)
+                    12000      30439                   presenceOf(copy_lane_parking:1_5)
+                    13000      26214                   presenceOf(copy_trips:10_211)
+                    14000      24878        F          presenceOf(copy_trips:32_296)
+                    15000      24878        F          presenceOf(copy_bus_parking:2_298)
+                    16000      24878        F         !presenceOf(copy_trips:15_299)
+                    17000      24881                  !presenceOf(copy_trips:15_82)
+                    18000      25886                   presenceOf(copy_lane_parking:4_221)
+                    19000      24991        F          presenceOf(copy_trips:16_0)
+                    20000      28135                   presenceOf(copy_lane_parking:1_206)
+ ! Time = 26.67s, Average fail depth = 296, Memory usage = 871.6 MB
+ !               Branches  Non-fixed            Branch decision
+                    21000      24860                  !presenceOf(copy_trips:30_1)
+                    22000      32403                   presenceOf(copy_trips:34_59)
+                    23000      24582        F          presenceOf(copy_trips:14_219)
+                    24000      24860        F          presenceOf(copy_bus_parking:15_299)
+                    25000      24860                  !presenceOf(copy_bus_parking:24_3)
+                    26000      33655                   presenceOf(copy_trips:9_135)
+                    27000      23859                   presenceOf(copy_bus_parking:26_2)
+                    28000      23859                   presenceOf(copy_bus_parking:38_2)
+                    29000      23859                  !presenceOf(copy_trips:20_0)
+                    30000      23859            594 != startOf(charge:8_11)
+                    31000      21276                  !presenceOf(copy_trips:0_140)
+                    32000      11876            on charge:19_198
+                    33000       2088                   presenceOf(copy_trips:9_241)
+ *                  33285  41.58s                    -
+ ! ----------------------------------------------------------------------------
+ ! Search completed, 1 solution found.
+ ! ----------------------------------------------------------------------------
+ ! Number of branches     : 33285
+ ! Number of fails        : 10671
+ ! Total memory usage     : 980.4 MB (957.3 MB CP Optimizer + 23.1 MB Concert)
+ ! Time spent in solve    : 41.58s (38.21s engine + 3.38s extraction)
+ ! Search speed (br. / s) : 871.3
+ ! ----------------------------------------------------------------------------

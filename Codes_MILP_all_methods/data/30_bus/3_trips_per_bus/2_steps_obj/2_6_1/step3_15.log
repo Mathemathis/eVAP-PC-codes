@@ -1,0 +1,91 @@
+Solver command line: ['C:\\Program Files\\IBM\\ILOG\\CPLEX_Studio221\\cplex\\bin\\x64_win64\\cplex.exe']
+
+
+Welcome to IBM(R) ILOG(R) CPLEX(R) Interactive Optimizer 22.1.0.0
+  with Simplex, Mixed Integer & Barrier Optimizers
+5725-A06 5725-A29 5724-Y48 5724-Y49 5724-Y54 5724-Y55 5655-Y21
+Copyright IBM Corp. 1988, 2022.  All Rights Reserved.
+
+Type 'help' for a list of available commands.
+Type 'help' followed by a command name for more
+information on commands.
+
+CPLEX> Logfile 'cplex.log' closed.
+Logfile 'data\30_bus\3_trips_per_bus\2_steps_obj\2_6_1\step3_15.log' open.
+CPLEX> New value for mixed integer solutions limit: 1
+CPLEX> New value for time limit in seconds: 360
+CPLEX> New value for default parallel thread count: 1
+CPLEX> Problem 'C:\Users\Mathis\AppData\Local\Temp\tmpxsqviui7.pyomo.lp' read.
+Read time = 0.06 sec. (5.20 ticks)
+CPLEX> Problem name         : C:\Users\Mathis\AppData\Local\Temp\tmpxsqviui7.pyomo.lp
+Objective sense      : Minimize
+Variables            :   38885  [Nneg: 8591,  Binary: 30294]
+Objective nonzeros   :       1
+Linear constraints   :   39486  [Less: 38015,  Greater: 420,  Equal: 1051]
+  Nonzeros           :  205678
+  RHS nonzeros       :   31496
+
+Variables            : Min LB: 0.000000         Max UB: 1.000000       
+Objective nonzeros   : Min   : 1.116003e+07     Max   : 1.116003e+07   
+Linear constraints   :
+  Nonzeros           : Min   : 0.2192982        Max   : 10000.00       
+  RHS nonzeros       : Min   : 1.000000         Max   : 10000.00       
+CPLEX> Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
+CPXPARAM_Threads                                 1
+CPXPARAM_MIP_Limits_Solutions                    1
+CPXPARAM_TimeLimit                               360
+Tried aggregator 2 times.
+MIP Presolve eliminated 32275 rows and 19827 columns.
+MIP Presolve modified 32256 coefficients.
+Aggregator did 271 substitutions.
+Reduced MIP has 6940 rows, 18787 columns, and 60139 nonzeros.
+Reduced MIP has 18326 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.14 sec. (98.09 ticks)
+Probing time = 0.02 sec. (7.16 ticks)
+Tried aggregator 1 time.
+Detecting symmetries...
+Reduced MIP has 6940 rows, 18787 columns, and 60139 nonzeros.
+Reduced MIP has 18326 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.03 sec. (39.34 ticks)
+Probing time = 0.02 sec. (7.12 ticks)
+Clique table members: 2178.
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: none, using 1 thread.
+Root relaxation solution time = 0.05 sec. (79.72 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+      0     0   1.11600e+07   450                 1.11600e+07     1179         
+      0     0   1.11600e+07   283                    Cuts: 13     2070         
+      0     0   1.11600e+07   310                  Cuts: 1029     3042         
+      0     0   1.11600e+07    73                    Cuts: 24     3234         
+      0     0   1.11600e+07   157                   Cuts: 322     3731         
+      0     2   1.11600e+07    18                 1.11600e+07     3731         
+Elapsed time = 3.08 sec. (4159.94 ticks, tree = 0.01 MB, solutions = 0)
+     15    17   1.11600e+07    92                 1.11600e+07     4987         
+*    30+    1                       1.11600e+07   1.11600e+07             0.00%
+
+Clique cuts applied:  7
+Implied bound cuts applied:  241
+Flow cuts applied:  2
+Mixed integer rounding cuts applied:  36
+Multi commodity flow cuts applied:  1
+Gomory fractional cuts applied:  6
+
+Root node processing (before b&c):
+  Real time             =    3.05 sec. (4140.85 ticks)
+Sequential b&c:
+  Real time             =    0.22 sec. (391.26 ticks)
+                          ------------
+Total (root+branch&cut) =    3.26 sec. (4532.11 ticks)
+
+Solution pool: 1 solution saved.
+
+MIP - Integer optimal solution:  Objective =  1.1160025000e+07
+Solution time =    3.26 sec.  Iterations = 5430  Nodes = 30
+Deterministic time = 4532.22 ticks  (1388.12 ticks/sec)
+
+CPLEX> Incumbent solution written to file 'C:\Users\Mathis\AppData\Local\Temp\tmpecc0hs78.cplex.sol'.
+CPLEX> 
